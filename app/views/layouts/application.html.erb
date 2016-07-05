@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Login', new_user_session_path%></li>
+        <li><%= link_to 'Logout', user_session_path%></li>
+        <li><%= link_to 'Register', user_registration_path%></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
