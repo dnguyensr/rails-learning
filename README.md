@@ -15,3 +15,7 @@
   * `rails generate devise:views`
   * `rails generate devise:controllers users`
   * `rails g scaffold Post user_id:integer title:string content:text`
+
+## Omniauth facebook
+  * bundle
+  * 
