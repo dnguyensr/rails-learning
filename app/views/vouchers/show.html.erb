@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @voucher.owner_id %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @voucher.event %>
+</p>
+
+<%= link_to 'Edit', edit_voucher_path(@voucher) %> |
+<%= link_to 'Back', vouchers_path %>
