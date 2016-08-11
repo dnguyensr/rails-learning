@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :trades
+  resources :vouchers
   root 'posts#index'
   resources :posts
   devise_for :users

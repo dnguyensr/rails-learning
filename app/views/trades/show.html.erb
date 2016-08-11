@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @trade.owner_id %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @trade.item %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @trade.quantity %>
+</p>
+
+<p>
+  <strong>For item:</strong>
+  <%= @trade.for_item %>
+</p>
+
+<p>
+  <strong>For cash:</strong>
+  <%= @trade.for_cash %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @trade.cost %>
+</p>
+
+<%= link_to 'Edit', edit_trade_path(@trade) %> |
+<%= link_to 'Back', trades_path %>

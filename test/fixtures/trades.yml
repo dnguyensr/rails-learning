@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_id: 1
+  item: 1
+  quantity: 1
+  for_item: false
+  for_cash: false
+  cost: 1
+
+two:
+  owner_id: 1
+  item: 1
+  quantity: 1
+  for_item: false
+  for_cash: false
+  cost: 1
