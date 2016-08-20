@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  root 'events#index'
   resources :events
-  root 'vouchers#index'
   resources :trades
   resources :vouchers
   resources :posts
