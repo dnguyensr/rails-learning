@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  organizer: MyString
+  location: MyString
+  description: MyString
+  startdatetime: 2016-08-19 18:51:46
+  enddatetime: 2016-08-19 18:51:46
+
+two:
+  title: MyString
+  organizer: MyString
+  location: MyString
+  description: MyString
+  startdatetime: 2016-08-19 18:51:46
+  enddatetime: 2016-08-19 18:51:46
