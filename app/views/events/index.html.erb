@@ -2,36 +2,21 @@
 
 <h1>Events</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Organizer</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th>Start Date</th>
-      <th>End Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
     <% @events.each do |event| %>
-      <tr>
-        <td><%= event.title %></td>
-        <td><%= event.organizer %></td>
-        <td><%= event.location %></td>
-        <td><%= event.description %></td>
-        <td><%= event.startdatetime %></td>
-        <td><%= event.enddatetime %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-4">
+        <h3><%= event.title %></h3>
+        <div>Organizer: <%= event.organizer %></div>
+        <div>Location: <%= event.location %></div>
+        <div>Description: <%= event.description %></div>
+        <div><%= event.startdatetime.strftime('%_m/%_d/%y %H:%M%p')%>
+          -<%= event.enddatetime.strftime('%H:%M%p') %></div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+    <%#= link_to 'Show', event %>
+    <%#= link_to 'Edit', edit_event_path(event) %>
+    <%#= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<div><%= link_to 'New Event', new_event_path %><div>
